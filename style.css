@@ -116,3 +116,145 @@ li{
 #large-title{
     font-size: 21px;
 }
+
+#price{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.current-price{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#discount{
+    border: 1px solid hsl(25, 100%, 94%);
+    border-radius: 5px;
+    padding: 2px;
+    width: 40px;
+    text-align: center;
+    font-weight: 700;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+}
+
+.old-price p{
+    font-size: 16px;
+    color:  hsl(219, 9%, 45%);
+    font-weight: 700;
+    text-decoration: line-through;
+    
+}
+
+#buy-option{
+    
+    display: flex;
+    gap: 20px;
+    height: 80px;
+    align-items: center ;
+
+}
+
+/* style for quantity input  */
+
+
+
+.quantity-button{
+    width: 130px;
+    height: 30px;
+    display: flex;
+    border: 1px solid hsl(223, 64%, 98%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hsl(223, 64%, 98%);
+}
+
+#product-quantity-no{
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color:  hsl(219, 9%, 45%);
+    font-weight: 700;
+    background-color: hsl(223, 64%, 98%);
+    
+}
+
+/* Hide the number input spinner */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+/* Style the buttons */
+.button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid hsl(26, 100%, 55%);
+    background-color: hsl(26, 100%, 55%);
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+    border-radius: 10px;
+  }
+  
+  .button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: hsl(26, 100%, 55%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button:hover {
+    background: hsl(26, 100%, 55%);
+    border-radius: 10px;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: hsl(26, 100%, 55%);
+  }
+  
+  .button:active {
+    border: 1px solid hsl(26, 100%, 55%);
+  }
